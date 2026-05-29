@@ -7,11 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="relative capitalize ">
+    <!-- hero section -->
+    <div class="relative capitalize">
       <img
         src="./images/banner-bg.jpg.jpeg"
         alt="banner-bg"
-        class="absolute h-full w-full -z-10 rounded-b-[100px] "
+        class="absolute h-full w-full -z-10 rounded-b-[100px]"
       />
 
       <nav class="flex items-center justify-between px-20 py-8">
@@ -19,9 +20,7 @@
         <div
           class="flex items-center justify-center gap-7 text-white *:text-lg"
         >
-          <a href="" class="bg-blue-400 t px-4 py-1 rounded-3xl"
-            >home</a
-          >
+          <a href="" class="bg-blue-400 t px-4 py-1 rounded-3xl">home</a>
           <a
             href=""
             class="bg-transparent px-4 py-1 rounded-3xl hover:bg-blue-400 transition-all"
@@ -29,7 +28,7 @@
           >
           <a
             href=""
-            class="bg-transparent px-4 py-1 rounded-3xl hover:bg-blue-400  transition-all"
+            class="bg-transparent px-4 py-1 rounded-3xl hover:bg-blue-400 transition-all"
             >product details</a
           >
           <a
@@ -41,31 +40,336 @@
         </div>
       </nav>
 
-      <div class="flex justify-around  py-20 text-white">
-        <div class="w-[45%] flex flex-col justify-around relative ">
-          <div class=" flex flex-col gap-4 " >
-            <h3 class=" text-xl font-semibold uppercase " >welcome to lugx</h3>
-            <h1 class=" text-6xl font-bold " >best gaming site ever!</h1>
+      <div class="flex justify-around py-20 pb-44 text-white">
+        <div class="w-[45%] flex flex-col justify-around relative">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-semibold uppercase">welcome to lugx</h3>
+            <h1 class="text-6xl font-bold">best gaming site ever!</h1>
           </div>
-          <p class=" text-md " >
+          <p class="text-md">
             LUGX gaming is a free bootstrap 5 html css template website for your
             gaming websites. you can download this layout for commercial
             purpose. please your friends about TemplateMo
           </p>
-          <div class=" w-[500px] relative  " >
-            <input type="text" placeholder="type something..."   class=" bg-white text-black w-full rounded-4xl p-4  capitalize outline-none " />
-            <button class=" bg-red-400 py-4 px-5 text-md uppercase rounded-4xl absolute -right-3 top-0 hover:bg-blue-500  transition-all duration-300 " >search now</button>
+          <div class="w-[500px] relative">
+            <input
+              type="text"
+              placeholder="type something..."
+              class="bg-white text-black w-full rounded-4xl p-4 capitalize outline-none"
+            />
+            <button
+              class="bg-red-400 py-4 px-5 text-md uppercase rounded-4xl absolute -right-3 top-0 hover:bg-blue-500 transition-all duration-300"
+            >
+              search now
+            </button>
           </div>
-          <img src="./images/caption-dec.png" alt="" class=" absolute top-48 left-32 " >
+          <img
+            src="./images/caption-dec.png"
+            alt=""
+            class="absolute top-48 left-32"
+          />
         </div>
 
-        <div class=" relative w-[350px] h-[450px] flex items-start justify-end" >
-          <img src="./images/banner-image.jpg.jpeg" alt="" class=" absolute w-full h-full -z-10 object-cover rounded-3xl " />
-          <h1 class=" bg-blue-500 w-[70px] flex items-center justify-center p-2 rounded-3xl text-xl font-bold m-3 " >$22</h1>
-          <div class=" bg-red-400 w-24 h-24 flex items-center justify-center rounded-full absolute -bottom-7 -left-7 " >
-            <h1 class=" text-2xl font-bold " >-40%</h1>
+        <div class="relative w-[350px] h-[450px] flex items-start justify-end">
+          <img
+            src="./images/banner-image.jpg.jpeg"
+            alt=""
+            class="absolute w-full h-full -z-10 object-cover rounded-3xl"
+          />
+          <h1
+            class="bg-blue-500 w-[70px] flex items-center justify-center p-2 rounded-3xl text-xl font-bold m-3"
+          >
+            $22
+          </h1>
+          <div
+            class="bg-red-400 w-24 h-24 flex items-center justify-center rounded-full absolute -bottom-7 -left-7"
+          >
+            <h1 class="text-2xl font-bold">-40%</h1>
           </div>
         </div>
+      </div>
+
+      <div
+        class="flex items-center gap-8 justify-center absolute -bottom-30 left-20"
+      >
+        <div
+          class="group w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]"
+        >
+          <div
+            class="p-7 bg-blue-600 rounded-full transition-all duration-300 group-hover:bg-red-400 flex items-center justify-center"
+          >
+            <img src="./images/featured-01.png" alt="" />
+          </div>
+          <h2 class="font-bold uppercase">free storage</h2>
+        </div>
+        <div
+          class="group w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]"
+        >
+          <div
+            class="p-7 bg-blue-600 rounded-full transition-all duration-300 group-hover:bg-red-400 flex items-center justify-center"
+          >
+            <img src="./images/featured-02.png" alt="" />
+          </div>
+          <h2 class="font-bold uppercase">user more</h2>
+        </div>
+        <div
+          class="group w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]"
+        >
+          <div
+            class="p-7 bg-blue-600 rounded-full transition-all duration-300 group-hover:bg-red-400 flex items-center justify-center"
+          >
+            <img src="./images/featured-03.png" alt="" />
+          </div>
+          <h2 class="font-bold uppercase">ready replay</h2>
+        </div>
+        <div
+          class="group w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]"
+        >
+          <div
+            class="p-7 bg-blue-600 rounded-full transition-all duration-300 group-hover:bg-red-400 flex items-center justify-center"
+          >
+            <img src="./images/featured-04.png" alt="" />
+          </div>
+          <h2 class="font-bold uppercase">easy layout</h2>
+        </div>
+      </div>
+    </div>
+    <!-- trending game section -->
+    <div class="py-50 px-20 capitalize flex flex-col gap-16">
+      <div class="flex items-end justify-between">
+        <div class="flex flex-col gap-4">
+          <h2 class="uppercase text-red-400 font-bold">trending</h2>
+          <h1 class="font-bold text-4xl">trending games</h1>
+        </div>
+        <a
+          href=""
+          class="bg-red-400 text-sm text-white p-4 px-8 uppercase font-bold rounded-full"
+          >view all</a
+        >
+      </div>
+
+      <div class="flex items-center justify-between gap-6">
+        <div class="group relative bg-gray-200 shadow-xl w-[280px] rounded-3xl">
+          <img
+            src="./images/trending-01.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div
+            class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
+          >
+            <p class="line-through text-md">$28</p>
+            <p class="font-bold text-md">$20</p>
+          </div>
+          <div class="flex items-end justify-between p-7">
+            <div>
+              <p class="text-gray-500">action</p>
+              <h1 class="text-xl font-semibold">assassin creed</h1>
+            </div>
+            <div
+              class="bg-red-400 p-2 rounded-full transition-all duration-200 group-hover:bg-blue-400"
+            >
+              <img
+                src="./images/bag-shopping-solid-full.svg"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-200 shadow-xl w-[280px] rounded-3xl">
+          <img
+            src="./images/trending-02.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div
+            class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
+          >
+            <p class="font-bold text-md">$44</p>
+          </div>
+          <div class="flex items-end justify-between p-7">
+            <div>
+              <p class="text-gray-500">action</p>
+              <h1 class="text-xl font-semibold">assassin creed</h1>
+            </div>
+            <div
+              class="bg-red-400 p-2 rounded-full transition-all duration-200 group-hover:bg-blue-400"
+            >
+              <img
+                src="./images/bag-shopping-solid-full.svg"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-200 shadow-xl w-[280px] rounded-3xl">
+          <img
+            src="./images/trending-03.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div
+            class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
+          >
+            <p class="line-through text-md">$64</p>
+            <p class="font-bold text-md">$44</p>
+          </div>
+          <div class="flex items-end justify-between p-7">
+            <div>
+              <p class="text-gray-500">action</p>
+              <h1 class="text-xl font-semibold">assassin creed</h1>
+            </div>
+            <div
+              class="bg-red-400 p-2 rounded-full transition-all duration-200 group-hover:bg-blue-400"
+            >
+              <img
+                src="./images/bag-shopping-solid-full.svg"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-200 shadow-xl w-[280px] rounded-3xl">
+          <img
+            src="./images/trending-04.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div
+            class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
+          >
+            <p class="font-bold text-md">$32</p>
+          </div>
+          <div class="flex items-end justify-between p-7">
+            <div>
+              <p class="text-gray-500">action</p>
+              <h1 class="text-xl font-semibold">assassin creed</h1>
+            </div>
+            <div
+              class="bg-red-400 p-2 rounded-full transition-all duration-200 group-hover:bg-blue-400"
+            >
+              <img
+                src="./images/bag-shopping-solid-full.svg"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top game section -->
+    <div
+      class="px-20 py-20 rounded-[150px] capitalize bg-gray-100 flex flex-col gap-15"
+    >
+      <div class="flex items-end justify-between">
+        <div class="flex flex-col gap-4">
+          <h2 class="uppercase text-red-400 font-bold">top games</h2>
+          <h1 class="font-bold text-4xl">most played</h1>
+        </div>
+        <a
+          href=""
+          class="bg-red-400 text-sm text-white p-4 px-8 uppercase font-bold rounded-full"
+          >view all</a
+        >
+      </div>
+      <div class=" flex items-center gap-7 " >
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-01.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-02.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-03.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-04.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-05.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
+        <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
+          <img
+            src="./images/top-game-06.jpg.jpeg"
+            alt=""
+            class="rounded-[25px]"
+          />
+          <div class=" p-4 pb-8 flex flex-col items-center justify-center " >
+            <p class="text-gray-500">adventure</p>
+            <h1 class="text-lg font-semibold group-hover:text-blue-500 transition-all duration-300 ">assassin creed</h1>
+          </div>
+         <div class=" flex justify-center absolute -bottom-5 left-10  " >
+           <a href="" class=" group-hover:bg-blue-500 font-bold uppercase  px-3  bg-red-400 text-white p-2 rounded-full transition-all duration-300 " >explore</a>
+         </div>
+        </div>
+        <!-- btn cards -->
       </div>
     </div>
   </body>
