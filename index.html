@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <style>
+      *{
+        border: 1px solid red;
+      }
+    </style> -->
   </head>
   <body>
     <!-- hero section -->
@@ -15,10 +20,10 @@
         class="absolute h-full w-full -z-10 rounded-b-[100px]"
       />
 
-      <nav class="flex items-center justify-between px-20 py-8  ">
+      <nav class="flex  items-center justify-between relative top-0 px-7 md:px-20  py-8   ">
         <img src="./images/logo.png" alt="" />
         <div
-          class="flex  items-center justify-center gap-7 text-white *:text-lg"
+          class="  items-center justify-center gap-7 text-white *:text-lg hidden xl:flex lg:flex  "
         >
           <a href="" class="bg-blue-400 t px-4 py-1 rounded-3xl">home</a>
           <a
@@ -38,13 +43,18 @@
           >
           <a href="" class="bg-red-400 px-5 py-2 rounded-3xl">sign in</a>
         </div>
+        <div class="w-10 flex flex-col gap-2 visible lg:hidden xl:hidden " >
+          <div class="w-[70%] h-1 rounded-full bg-white"></div>
+          <div class="w-full h-1 rounded-full bg-white"></div>
+          <div class="w-[70%] h-1 rounded-full bg-white"></div>
+        </div>
       </nav>
 
-      <div class="flex flex-col items-center gap-14 px-32 lg:px-20 xl:px-20  lg:flex-row xl:flex-row  justify-around py-20 pb-44 text-white lg:gap-30">
+      <div class="flex flex-col items-center gap-14 px-10  md:px-24 lg:px-20 xl:px-20  lg:flex-row xl:flex-row  justify-around py-20 pb-44 text-white lg:gap-30 ">
         <div class=" w-full lg:w-[45%] xl:w-[45%] xl:items-start items-center  flex flex-col justify-around relative gap-8 ">
           <div class="flex items-center lg:items-start xl:items-start flex-col gap-4">
             <h3 class="text-xl font-semibold uppercase">welcome to lugx</h3>
-            <h1 class="text-6xl font-bold">best gaming site ever!</h1>
+            <h1 class="text-6xl font-bold text-center xl:text-left lg:text-left ">best gaming site ever!</h1>
           </div>
           <p class="text-md text-center xl:text-left lg:text-left ">
             LUGX gaming is a free bootstrap 5 html css template website for your
@@ -90,7 +100,7 @@
       </div>
 
       <div
-        class="flex flex-wrap w-full p-5  items-center gap-5 justify-center absolute -bottom-2/4 xl:flex-nowrap xl:flex-row xl:-bottom-36 left-0 lg:*:w-[290px] xl:*:w-[250px]  md:-bottom-1/4 lg:-bottom-80 lg:flex-row md:flex-row *:w-full "
+        class="flex flex-wrap w-full p-5  items-center gap-5 justify-center absolute -bottom-2/4 xl:flex-nowrap xl:flex-row xl:-bottom-36 left-0 lg:*:w-[290px] xl:*:w-[250px]  md:-bottom-1/4 lg:-bottom-80 lg:flex-row md:flex-row *:w-full md:*:w-[300px] "
       >
         <div
           class="group w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]"
@@ -135,7 +145,7 @@
       </div>
     </div>
     <!-- trending game section -->
-    <div class="py-50 px-20 xl:pt-80 lg:pt-80 md:pt-[420px] sm:pt-[50pc] pt-[60pc]  capitalize flex flex-col gap-16">
+    <div class="py-50 px-7 md:px-20 lg:px-20 xl:px-20  xl:pt-80 lg:pt-80 md:pt-[420px] sm:pt-[50pc] pt-[60pc]  capitalize flex flex-col gap-16">
       <div class="flex items-end justify-between">
         <div class="flex flex-col gap-4">
           <h2 class="uppercase text-red-400 font-bold">trending</h2>
@@ -143,17 +153,17 @@
         </div>
         <a
           href=""
-          class="bg-red-400 text-sm text-white p-4 px-8 uppercase font-bold rounded-full"
+          class="bg-red-400 text-sm text-white p-4 px-8 uppercase font-bold rounded-full hidden xl:block lg:block"
           >view all</a
         >
       </div>
 
-      <div class="flex items-center justify-between gap-6">
-        <div class="group relative bg-gray-200 shadow-xl w-[280px] rounded-3xl">
+      <div class="flex items-center justify-start lg:justify-between xl:justify-between gap-6 flex-wrap lg:flex-nowrap xl:flex-nowrap *:w-full md:*:w-[300px] md:grid md:grid-cols-2 md:justify-start ">
+        <div class="group relative bg-gray-200 shadow-xl xl:w-[280px] lg:w-[280px] rounded-3xl">
           <img
             src="./images/trending-01.jpg.jpeg"
             alt=""
-            class="rounded-[25px]"
+            class="rounded-[25px] w-full"
           />
           <div
             class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
@@ -182,7 +192,7 @@
           <img
             src="./images/trending-02.jpg.jpeg"
             alt=""
-            class="rounded-[25px]"
+            class="rounded-[25px] w-full"
           />
           <div
             class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
@@ -210,7 +220,7 @@
           <img
             src="./images/trending-03.jpg.jpeg"
             alt=""
-            class="rounded-[25px]"
+            class="rounded-[25px] w-full "
           />
           <div
             class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
@@ -239,7 +249,7 @@
           <img
             src="./images/trending-04.jpg.jpeg"
             alt=""
-            class="rounded-[25px]"
+            class="rounded-[25px] w-full"
           />
           <div
             class="absolute top-4 right-4 bg-blue-500 p-1 px-4 rounded-lg text-white"
@@ -279,7 +289,7 @@
           >view all</a
         >
       </div>
-      <div class=" flex items-center gap-7 " >
+      <div class=" flex items-center gap-7 xl:flex-nowrap lg:flex-nowrap flex-wrap " >
         <div class="group relative bg-white shadow-xl w-[180px] rounded-3xl">
           <img
             src="./images/top-game-01.jpg.jpeg"
@@ -378,7 +388,7 @@
         <h3 class=" text-red-500 uppercase font-bold " >categories</h3>
         <h1  class=" text-4xl  font-bold " >top categories</h1>
       </div>
-      <div class=" flex items-center justify-between gap-4 " >
+      <div class=" flex items-center justify-between gap-4 lg:flex-nowrap xl:flex-nowrap flex-wrap " >
         <div class=" bg-blue-600 w-52 flex flex-col items-center justify-between overflow-hidden rounded-3xl  " >
           <div class=" p-5 " >
             <h1 class=" font-semibold capitalize text-white text-xl " >action</h1>
